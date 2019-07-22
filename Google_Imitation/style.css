@@ -75,6 +75,7 @@ input {
   border: 1px solid #dfe1e5;
   max-height: 20px;
   height: 20px;
+  cursor: pointer;
 }
 
 input:hover {
