@@ -101,3 +101,15 @@ input {
 .lower-btns a:hover {
   text-decoration: underline;
 }
+
+footer {
+  width: 100%;
+  display: flex;
+  padding: .5rem;
+  justify-content: space-between;
+  height: 5vh;
+  max-height: 40px;
+  position: absolute;
+  bottom: 0;
+  background: #eee;
+}
