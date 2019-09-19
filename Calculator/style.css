@@ -10,7 +10,7 @@ body {
 
 .nav {
   width: 100%;
-  padding: 20px 30px;
+  padding: 10px 30px;
   background: #333;
   margin: 0;
 }
@@ -30,10 +30,10 @@ body {
 .calculator-container {
   background: #444;
   border-radius: 15px;
-  height: 700px;
   width: 500px;
   margin: auto;
   padding: 10px;
+  box-shadow: 1px 1px 10px 1px #888888;
 }
 
 .output {
@@ -49,24 +49,43 @@ body {
 }
 
 .input {
-  height: 620px;
   width: 100%;
   border-radius: 5px;
-  border: 1px solid #fff;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .input > div {
+  flex: 1 0 21%;
   display: flex;
-  width: 24.3%;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   background: rgba(233, 233, 233, 0.9);
   height: 100px;
+  border: 1px solid #222;
+  border-radius: 2px;
+  width: 24.3%;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.operation {
+  background: rgba(200, 200, 200, 1) !important;
+}
+
+.input > div:hover, .operation:hover {
+  background: rgba(255, 255, 255, 1) !important;
+}
+
+#eval {
+  width: 100%;
 }
 
 footer {
   background: #222;
   width: 100%;
-  padding: 20px 30px;
+  padding: 10px 30px;
   text-align: center;
   position: fixed;
   bottom: 0;
